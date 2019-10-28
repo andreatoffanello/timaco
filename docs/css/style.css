@@ -809,6 +809,7 @@ main h2 {
   grid-template-areas: "title year" "meta meta" "player player" "descr descr" "cat cat" ". .";
   grid-gap: 8px;
   position: relative;
+  height: 420px;
 }
 
 .grid_item:before {
@@ -824,6 +825,10 @@ main h2 {
   -webkit-transition: 1s cubic-bezier(0.3, 0, 0, 1);
   -o-transition: 1s cubic-bezier(0.3, 0, 0, 1);
   transition: 1s cubic-bezier(0.3, 0, 0, 1);
+}
+
+.grid_item .end, .grid_item .prod {
+  margin-right: 16px;
 }
 
 .grid_item .title {
@@ -899,7 +904,7 @@ main h2 {
 
 .grid_item:hover .meta, .grid_item:hover .descr, .grid_item:hover .cat {
   height: auto;
-  max-height: 64px;
+  max-height: 92px;
   overflow: hidden;
   -webkit-transition: 1s cubic-bezier(0.3, 0, 0, 1);
   -o-transition: 1s cubic-bezier(0.3, 0, 0, 1);
