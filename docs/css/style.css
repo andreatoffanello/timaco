@@ -724,6 +724,12 @@ header {
   grid-gap: 32px;
 }
 
+@media (max-width: 768px) {
+  header {
+    grid-template-columns: 1fr;
+  }
+}
+
 header h1, header h2 {
   text-transform: uppercase;
   font-weight: 800;
@@ -749,6 +755,12 @@ header p {
   margin: 32px 0;
   font-size: 18px;
   letter-spacing: .05em;
+}
+
+@media (max-width: 768px) {
+  header .links {
+    width: 128px;
+  }
 }
 
 header .links a {

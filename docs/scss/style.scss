@@ -630,6 +630,10 @@ header {
   grid-template-columns: 1fr 128px;
   grid-gap: 32px;
 
+  @include breakpoint(mobile) {
+     grid-template-columns: 1fr;
+  }
+
   h1, h2 {
     text-transform: uppercase;
     font-weight: 800;
@@ -658,6 +662,12 @@ header {
       letter-spacing: .05em
   }
 
+
+  .links {
+      @include breakpoint(mobile) {
+         width: 128px;
+      }
+  }
 
   .links a {
       display: block;
