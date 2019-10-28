@@ -1,0 +1,30 @@
+{
+  "name": "ligea",
+  "version": "1.0.0",
+  "description": "ligea css compiler",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "autoprefixer": "^9.6.5",
+    "beeper": "^2.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-cached": "^1.1.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-livereload": "^4.0.2",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-lint": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "postcss-load-config": "^2.1.0",
+    "run-sequence": "^2.2.1"
+  },
+  "devDependencies": {
+    "gulp-postcss": "^8.0.0",
+    "postcss-short-color": "^4.0.0"
+  },
+  "scripts": {
+    "test": "test"
+  }
+}
