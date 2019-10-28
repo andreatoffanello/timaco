@@ -3,9 +3,21 @@ $(document).ready(function() {
   const players = Array.from(document.querySelectorAll('.js-player')).map(p => new Plyr(p));
 
 
-  $(".loader").removeClass("on");
 
-  
+
+  $("header, main, footer,.grid_item").addClass("hidden");
+
+  function removeLoader() {
+      $(".loader").removeClass("on");
+  }
+  setTimeout(removeLoader, 2500);
+
+  function showPage() {
+      $("body *").removeClass("hidden");
+  }
+  setTimeout(showPage, 3000);
+
+
 
 
   // CURSOR
